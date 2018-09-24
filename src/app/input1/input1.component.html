@@ -1,0 +1,8 @@
+<div *ngIf="rec_articles">
+      
+<mat-card *ngFor="let a of rec_articles">
+                <h1>{{sourceId}}</h1>
+        <mat-card-title>{{a.author}}</mat-card-title>
+        <mat-card-subtitle>{{a.title}}</mat-card-subtitle>
+</mat-card>
+</div>

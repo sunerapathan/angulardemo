@@ -1,0 +1,16 @@
+<div class="container">
+<div fxFlex ="50" style="float:left;overflow-y:scroll;height:1000px;">
+<mat-card  *ngFor="let a of response" style="margin:10px;" (click)="oncardClick(a.id)">
+    <mat-card-title>{{a.id}}</mat-card-title>
+    <mat-card-subtitle>{{a.name}}</mat-card-subtitle>
+    <a [href]="a.url" target="_blank">{{a.url}}</a>
+
+   
+  </mat-card>
+</div>
+
+<div  fxFlex ="50" style="float:right;overflow-y:scroll;height:700px;">
+  <app-input1 [sourceId] = "source_id" ></app-input1>
+</div>  
+
+</div>

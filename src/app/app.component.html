@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <form class="form" [formGroup]="mRegistration">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="First Name" formControlName="first_name" >
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Last Name" formControlName="last_name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email" formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width"> 
+      <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="date" >
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  
+  <mat-form-field class="example-full-width">
+      <input matInput placeholder="Mobile" formControlName="mobile">
+    </mat-form-field>
+  
+</form> -->
+
+<!-- <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/input">Heroes</a>
+
+</nav> -->
+
+<!-- <app-input> </app-input> -->
+
+  <mat-sidenav-container class="example-container">
+      <mat-sidenav mode="side" opened class="sidecontent">
+        <mat-nav-list>
+          <a matLine routerLink="/first" class="sidelinkcontent">First</a><br>
+          <a matLine routerLink="/second" class="sidelinkcontent">Second</a>
+          </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content >
+          <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+    
