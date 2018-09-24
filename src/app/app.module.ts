@@ -16,6 +16,7 @@ import { RouterModule } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { AdminComponent } from './admin/admin.component';
+import { DummyComponent } from './dummy/dummy.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AdminComponent } from './admin/admin.component';
     Input1Component,
     FirstComponent,
     SecondComponent,
-    AdminComponent
+    AdminComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,
